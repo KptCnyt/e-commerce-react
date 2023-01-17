@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
 
 export const HamburgerMenu = () => {
     const [navbar, setNavbar] = useState(false);
+    const [buttonLine, setButtonLine] = useState(false);
+  
 
     return (
-        <nav className="w-full bg-white shadow">
+        <nav className="w-full bg-white border-b-4">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -57,8 +59,8 @@ export const HamburgerMenu = () => {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600">
+                        <ul className="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+                            <li className="text-gray-600 hover:text-blue-600 md:hover:border-b-4 hover:border-b-0">
                                 <a href="">Home</a>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
