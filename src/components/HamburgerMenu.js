@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import "./index.css"
 
 
 export const HamburgerMenu = () => {
     const [navbar, setNavbar] = useState(false);
-    const [buttonLine, setButtonLine] = useState(false);
+   
   
 
     return (
-        <nav className="w-full bg-white border-b-4">
+        <nav className="w-full bg-white">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -60,17 +61,17 @@ export const HamburgerMenu = () => {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-blue-600 md:hover:border-b-4 hover:border-b-0">
+                            <li className="w-12 animation text-gray-600 hover:text-blue-600">
                                 <a href="">Home</a>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
+                            <li className="w-10 animation text-gray-600 hover:text-blue-600">
                                 <a href="">Blog</a>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
+                            <li className="w-20 animation text-gray-600 hover:text-blue-600">
                                 <a href="">About US</a>
                             </li>
-                            <li className="text-gray-600 hover:text-blue-600">
-                                <a href="#">Contact US</a>
+                            <li className="w-20 text-gray-600 hover:text-blue-600">
+                                <a href="#"><span className="animation">Contact US</span></a>
                             </li>
                         </ul>
                     </div>
