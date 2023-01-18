@@ -9,10 +9,10 @@ export const HamburgerMenu = () => {
   
 
     return (
-        <nav className="w-full bg-white">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-                <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+        <nav className="w-full bg-white pt-4 h-16 justify-center border-b-2">
+            <div className="h-full justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+                <div className="h-full">
+                    <div className="h-full flex items-center justify-between md:block">
                         <a href="">
                             <h2 className="text-2xl font-bold">LOGO</h2>
                         </a>
@@ -54,24 +54,24 @@ export const HamburgerMenu = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="h-full">
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                        className={`h-full flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0.5 ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                            <li className="w-12 animation text-gray-600 hover:text-blue-600">
+                        <ul className="h-full items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+                            <li className=" h-full w-12 duration-150 hover:border-b-4 border-orange-400 text-gray-600 hover:text-blue-600">
                                 <a href="">Home</a>
                             </li>
-                            <li className="w-10 animation text-gray-600 hover:text-blue-600">
+                            <li className="h-full w-10 duration-150 hover:border-b-4 border-orange-400 text-gray-600 hover:text-blue-600">
                                 <a href="">Blog</a>
                             </li>
-                            <li className="w-20 animation text-gray-600 hover:text-blue-600">
+                            <li className=" h-full w-20 duration-150 hover:border-b-4 border-orange-400 text-gray-600 hover:text-blue-600">
                                 <a href="">About US</a>
                             </li>
-                            <li className="w-20 text-gray-600 hover:text-blue-600">
-                                <a href="#"><span className="animation">Contact US</span></a>
+                            <li className="h-full w-20 duration-150 hover:border-b-4 border-orange-400 text-gray-600 hover:text-blue-600">
+                                <a href="#">Contact US</a>
                             </li>
                         </ul>
                     </div>
