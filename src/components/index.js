@@ -1,1 +1,2 @@
-export * from "./NavBar"
+export * from "./Navbar/NavBar"
+export * from "./Navbar/ProfileCard"
