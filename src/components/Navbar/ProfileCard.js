@@ -7,6 +7,9 @@ let Logo = require("./imageAvatar.png")
 
 export const ProfileCard = () => {
     return (
-    <img className="profile hidden md:block hover:border-2 rounded-3xl border-orange-400" src={Logo}/>
+        <div>
+            <img className="profile hover:border-2 rounded-3xl border-orange-400" src={Logo}/>
+        </div>
+    
     )
 }
