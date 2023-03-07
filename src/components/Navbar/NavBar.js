@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./index.css"
 import { ProfileCard } from "./ProfileCard";
 import { ShoppingBasket } from "./ShoppingBasket";
+import { Buttons } from "./Buttons";
 
 
 export const NavBar = () => {
@@ -90,6 +91,7 @@ export const NavBar = () => {
                              <ProfileCard/>
                             </div>
             </div>
+            <Buttons/>
         </nav>
     );
 }
